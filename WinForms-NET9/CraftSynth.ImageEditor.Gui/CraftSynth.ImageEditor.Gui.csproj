@@ -14,7 +14,7 @@
     <ProjectReference Include="..\CraftSynth.ImageEditor\CraftSynth.ImageEditor.csproj" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="$(OriginalWinFormsDir)\**\*.cs" Exclude="$(OriginalWinFormsDir)\Program.cs">
+    <Compile Include="$(OriginalWinFormsDir)\**\*.cs" Exclude="$(OriginalWinFormsDir)\Program.cs;$(OriginalWinFormsDir)\Form1.cs">
       <Link>%(RecursiveDir)%(Filename)%(Extension)</Link>
     </Compile>
     <EmbeddedResource Include="$(OriginalWinFormsDir)\**\*.resx">
