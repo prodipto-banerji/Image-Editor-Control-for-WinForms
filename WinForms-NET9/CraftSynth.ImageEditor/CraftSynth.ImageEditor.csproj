@@ -11,19 +11,19 @@
   </ItemGroup>
   <ItemGroup>
     <!-- Embed cursor resources used by custom cursors -->
-    <EmbeddedResource Include="Ellipse.cur" />
-    <EmbeddedResource Include="Line.cur" />
-    <EmbeddedResource Include="Rectangle.cur" />
-    <EmbeddedResource Include="Pencil.cur" />
-    <EmbeddedResource Include="PolyHandle.cur" />
-    <EmbeddedResource Include="TextTool.cur" />
+    <EmbeddedResource Include="..\..\CraftSynth.ImageEditor\**\Ellipse.cur" Link="Ellipse.cur" />
+    <EmbeddedResource Include="..\..\CraftSynth.ImageEditor\**\Line.cur" Link="Line.cur" />
+    <EmbeddedResource Include="..\..\CraftSynth.ImageEditor\**\Rectangle.cur" Link="Rectangle.cur" />
+    <EmbeddedResource Include="..\..\CraftSynth.ImageEditor\**\Pencil.cur" Link="Pencil.cur" />
+    <EmbeddedResource Include="..\..\CraftSynth.ImageEditor\**\PolyHandle.cur" Link="PolyHandle.cur" />
+    <EmbeddedResource Include="..\..\CraftSynth.ImageEditor\**\TextTool.cur" Link="TextTool.cur" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="..\CraftSynth.ImageEditor\**\*.cs"
-             Exclude="..\CraftSynth.ImageEditor\**\ToolImage.cs;..\CraftSynth.ImageEditor\**\DrawImage.cs"
+    <Compile Include="..\..\CraftSynth.ImageEditor\**\*.cs"
+             Exclude="..\..\CraftSynth.ImageEditor\**\ToolImage.cs;..\..\CraftSynth.ImageEditor\**\DrawImage.cs"
              Link="%(RecursiveDir)%(Filename)%(Extension)" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="..\CraftSynth.ImageEditor\**\*.resx" Link="%(RecursiveDir)%(Filename)%(Extension)" />
+    <EmbeddedResource Include="..\..\CraftSynth.ImageEditor\**\*.resx" Link="%(RecursiveDir)%(Filename)%(Extension)" />
   </ItemGroup>
 </Project>
