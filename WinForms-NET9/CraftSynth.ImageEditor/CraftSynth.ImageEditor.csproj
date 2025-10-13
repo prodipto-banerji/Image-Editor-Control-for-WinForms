@@ -19,7 +19,9 @@
     <EmbeddedResource Include="TextTool.cur" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="..\CraftSynth.ImageEditor\**\*.cs" Link="%(RecursiveDir)%(Filename)%(Extension)" />
+    <Compile Include="..\CraftSynth.ImageEditor\**\*.cs"
+             Exclude="..\CraftSynth.ImageEditor\**\ToolImage.cs;..\CraftSynth.ImageEditor\**\DrawImage.cs"
+             Link="%(RecursiveDir)%(Filename)%(Extension)" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="..\CraftSynth.ImageEditor\**\*.resx" Link="%(RecursiveDir)%(Filename)%(Extension)" />
