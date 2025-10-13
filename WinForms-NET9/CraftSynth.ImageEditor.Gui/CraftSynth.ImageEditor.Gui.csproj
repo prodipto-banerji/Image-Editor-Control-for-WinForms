@@ -8,13 +8,13 @@
     <ApplicationManifest>app.manifest</ApplicationManifest>
   </PropertyGroup>
   <PropertyGroup>
-    <OriginalWinFormsDir>..\Original</OriginalWinFormsDir>
+    <OriginalWinFormsDir>..\..\CraftSynth.ImageEditor.Gui</OriginalWinFormsDir>
   </PropertyGroup>
   <ItemGroup>
     <ProjectReference Include="..\CraftSynth.ImageEditor\CraftSynth.ImageEditor.csproj" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="$(OriginalWinFormsDir)\**\*.cs" Exclude="$(OriginalWinFormsDir)\Program.cs;$(OriginalWinFormsDir)\ApplicationConfiguration.cs">
+    <Compile Include="$(OriginalWinFormsDir)\**\*.cs" Exclude="$(OriginalWinFormsDir)\Program.cs">
       <Link>%(RecursiveDir)%(Filename)%(Extension)</Link>
     </Compile>
     <EmbeddedResource Include="$(OriginalWinFormsDir)\**\*.resx">
