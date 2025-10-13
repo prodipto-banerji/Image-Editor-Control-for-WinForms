@@ -7,8 +7,20 @@
     <ImplicitUsings>enable</ImplicitUsings>
     <ApplicationManifest>app.manifest</ApplicationManifest>
   </PropertyGroup>
+  <PropertyGroup>
+    <OriginalWinFormsDir>..\Original</OriginalWinFormsDir>
+  </PropertyGroup>
   <ItemGroup>
     <ProjectReference Include="..\CraftSynth.ImageEditor\CraftSynth.ImageEditor.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="$(OriginalWinFormsDir)\**\*.cs" Exclude="$(OriginalWinFormsDir)\Program.cs;$(OriginalWinFormsDir)\ApplicationConfiguration.cs">
+      <Link>%(RecursiveDir)%(Filename)%(Extension)</Link>
+    </Compile>
+    <EmbeddedResource Include="$(OriginalWinFormsDir)\**\*.resx">
+      <Link>%(RecursiveDir)%(Filename)%(Extension)</Link>
+    </EmbeddedResource>
+    <None Remove="$(OriginalWinFormsDir)\app.config" />
   </ItemGroup>
   <ItemGroup>
     <None Update="appsettings.json">
