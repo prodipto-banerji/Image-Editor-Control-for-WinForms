@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+  <PropertyGroup>
+    <TargetFramework>net9.0</TargetFramework>
+    <UseWindowsForms>true</UseWindowsForms>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <OutputType>Library</OutputType>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="SixLabors.ImageSharp" Version="3.1.4" />
+  </ItemGroup>
+  <ItemGroup>
+    <!-- Embed cursor resources used by custom cursors -->
+    <EmbeddedResource Include="Ellipse.cur" />
+    <EmbeddedResource Include="Line.cur" />
+    <EmbeddedResource Include="Rectangle.cur" />
+    <EmbeddedResource Include="Pencil.cur" />
+    <EmbeddedResource Include="PolyHandle.cur" />
+    <EmbeddedResource Include="TextTool.cur" />
+  </ItemGroup>
+</Project>
