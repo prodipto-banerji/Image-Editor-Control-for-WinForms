@@ -6,13 +6,38 @@ using SkiaSharp;
 
 namespace CraftSynth.ImageEditor.Gui
 {
-    public partial class Form1 : Form
+    public class Form1 : Form
     {
         private readonly CraftSynth.ImageEditor.MainForm imageEditor1;
 
         public Form1()
         {
-            InitializeComponent();
+            Text = "CraftSynth Image Editor";
+            StartPosition = FormStartPosition.CenterScreen;
+
+            var menuStrip = new MenuStrip { Dock = DockStyle.Top };
+            var fileMenu = new ToolStripMenuItem("&File");
+            var helpMenu = new ToolStripMenuItem("&Help");
+
+            var tsmiImport = new ToolStripMenuItem("&Import", null, tsmiImport_Click);
+            var tsmiExport = new ToolStripMenuItem("&Export", null, tsmiExport_Click);
+            var tsmiExit = new ToolStripMenuItem("E&xit", null, tsmiExit_Click);
+            var tsmiAbout = new ToolStripMenuItem("&About", null, tsmiAbout_Click);
+
+            fileMenu.DropDownItems.AddRange(new ToolStripItem[]
+            {
+                tsmiImport,
+                tsmiExport,
+                new ToolStripSeparator(),
+                tsmiExit
+            });
+
+            helpMenu.DropDownItems.Add(tsmiAbout);
+
+            menuStrip.Items.AddRange(new ToolStripItem[] { fileMenu, helpMenu });
+            MainMenuStrip = menuStrip;
+            Controls.Add(menuStrip);
+
             imageEditor1 = new CraftSynth.ImageEditor.MainForm { Dock = DockStyle.Fill };
             Controls.Add(imageEditor1);
         }
