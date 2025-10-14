@@ -1,0 +1,15 @@
+This is a placeholder for the PolyHandle.cur cursor file. 
+
+Since cursor files (.cur) are binary resources and I cannot access the original file content from the repository, this is a migration note.
+
+The original PolyHandle.cur file needs to be manually copied from the .NET 4.8 project to this location in the .NET 9 project.
+
+This cursor file is used by:
+- DrawPolygon.cs in the LoadCursor() method
+- DrawConnector.cs in the LoadCursor() method
+
+The cursor is loaded using: handleCursor = new Cursor(GetType(), "PolyHandle.cur");
+
+For .NET 9 with SkiaSharp migration, the cursor loading mechanism will remain the same since Windows Forms cursors are not part of System.Drawing and do not need to be replaced with SkiaSharp equivalents.
+
+The cursor file should be included as an EmbeddedResource in the .NET 9 project file.
