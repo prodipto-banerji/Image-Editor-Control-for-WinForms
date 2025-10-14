@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net9.0-windows</TargetFramework>
+    <UseWindowsForms>true</UseWindowsForms>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <LangVersion>preview</LangVersion>
+    <EnableWindowsTargeting>true</EnableWindowsTargeting>
+    <Platforms>AnyCPU</Platforms>
+    <AssemblyName>CraftSynth.ImageEditor</AssemblyName>
+    <RootNamespace>CraftSynth.ImageEditor</RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="SkiaSharp" Version="2.88.6" />
+    <PackageReference Include="SkiaSharp.Views.WindowsForms" Version="2.88.6" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\CraftSynth.ImageEditor\**\*.resx" CopyToOutputDirectory="PreserveNewest" />
+    <None Include="..\..\CraftSynth.ImageEditor\**\*.cur" CopyToOutputDirectory="PreserveNewest" />
+  </ItemGroup>
+</Project>
