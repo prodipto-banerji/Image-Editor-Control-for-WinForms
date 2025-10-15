@@ -1,1 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+<!-- RESX header -->
+<resheader name="resmimetype">
+<value>text/microsoft-resx</value>
+</resheader>
+<resheader name="version">
+<value>2.0</value>
+</resheader>
+<resheader name="reader">
+<value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+</resheader>
+<resheader name="writer">
+<value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+</resheader>
+ 
+  <!-- ===== Form-level defaults (match DrawArea.resx style) ===== -->
+<data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+<value>7, 15</value>
+</data>
+<data name="$this.AutoScaleMode" type="System.Windows.Forms.AutoScaleMode, System.Windows.Forms">
+<value>Font</value>
+</data>
+<data name="$this.Name">
+<value>MainForm</value>
+</data>
+<data name="$this.Text">
+<value>CraftSynth Image Editor</value>
+</data>
+ 
+  <!-- ===== Design-time tray locations (keeps Designer happy) ===== -->
+<metadata name="toolStrip1.TrayLocation" type="System.Drawing.Point, System.Drawing">
+<value>17, 17</value>
+</metadata>
+<metadata name="ctxtMenu.TrayLocation" type="System.Drawing.Point, System.Drawing">
+<value>115, 17</value>
+</metadata>
+ 
+  <!-- If DrawArea.resx used font or color metadata, mirror the pattern here: -->
+<!--
+<data name="$this.Font" type="System.Drawing.Font, System.Drawing">
+<value>Segoe UI, 9pt</value>
+</data>
+<data name="$this.BackColor" type="System.Drawing.Color, System.Drawing">
+<value>White</value>
+</data>
 
+  -->
+ 
+  <!-- ToolStrip text resources (optional; uncomment if you localize) -->
+<!--
+<data name="toolStripButtonPointer.ToolTipText"><value>Pointer</value></data>
+<data name="toolStripButtonRectangle.ToolTipText"><value>Rectangle</value></data>
+<data name="toolStripButtonEllipse.ToolTipText"><value>Ellipse</value></data>
+<data name="toolStripButtonLine.ToolTipText"><value>Line</value></data>
+<data name="toolStripButtonPencil.ToolTipText"><value>Pencil</value></data>
+<data name="toolStripButtonUndo.ToolTipText"><value>Undo</value></data>
+<data name="toolStripButtonRedo.ToolTipText"><value>Redo</value></data>
+
+  -->
+</root>
